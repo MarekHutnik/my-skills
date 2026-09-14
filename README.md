@@ -9,7 +9,7 @@ way of consuming them — the `skills` CLI, a Claude Code plugin, or a plain cop
 
 | Skill | What it does |
 |---|---|
-| [`comment-cleanup`](comment-cleanup/SKILL.md) | Cleans code comments so each says what the code **is** or **must be** — cutting history, rationale, consequences and measurements, and catching comments that describe code which no longer exists. |
+| [`comment-cleanup`](comment-cleanup/SKILL.md) | Cleans code comments **and docstrings** so each says what the code **is** or **must be** — cutting history, rationale, consequences and measurements, and catching prose that describes code which no longer exists. Also reports functions, methods and classes missing a docstring, via a bundled [`find_missing_docstrings.py`](comment-cleanup/scripts/find_missing_docstrings.py). |
 
 ## Installing
 
