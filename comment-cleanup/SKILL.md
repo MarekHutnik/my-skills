@@ -36,9 +36,8 @@ This holds for docstrings too. A docstring is a comment with a contract attached
 
 ## Docstrings
 
-Every docstring, not just the ones on tests. A docstring says what the thing does and what a
-caller must know to use it correctly. The cuts above apply unchanged — a rejected-alternatives
-essay is no more useful under `"""` than beside `#`.
+A docstring says what the thing does and what a caller must know to use it correctly. The cuts
+above apply — a rejected-alternatives essay is no more useful under `"""` than beside `#`.
 
 Three shapes worth looking for specifically:
 
