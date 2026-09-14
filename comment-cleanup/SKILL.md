@@ -100,13 +100,17 @@ a pure description of the problem and why it is rejected. No narrative, no measu
 
 - **`docs/`** — narrative, rationale and history legitimately live there. Do still remove
   measurements: those belong in the PR that made them.
-- **Error and exception messages** — user-facing, and free to explain.
+- **Error and exception messages** — user-facing, and free to explain at length.
+  Not trimming them is not the same as leaving them alone: an error stating something that is
+  no longer true is worse than a verbose one, because someone reads it under pressure and acts
+  on it. Correct the fact and keep the length.
 
 ## Two checks that matter more than style
 
-1. **Staleness.** A comment or docstring describing code that no longer exists is the worst
-   offender. Verify every factual claim against the current code and *fix* it — don't just
-   shorten a sentence that is wrong. This is the highest-value part of the pass.
+1. **Staleness.** Prose describing code that no longer exists is the worst offender, wherever it
+   sits: comment, docstring, or the text of an error. Verify every factual claim against the
+   current code and *fix* it — don't just shorten a sentence that is wrong.
+   This is the highest-value part of the pass.
 2. **Duplication.** Prose restating a `docs/` file goes stale *because* it is a duplicate with
    no test and no reader. Replace it with a short statement of what the code is, plus a
    pointer. Check the doc is actually correct before pointing at it.
